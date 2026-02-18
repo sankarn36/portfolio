@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+:root {
+  --neon-green: #ccff00;
+  --neon-pink: #ff00ff;
+  --acid-yellow: #ffff00;
+  --deep-black: #0a0a0a;
+  --off-white: #f0f0f0;
+}
+
+body {
+  background-color: var(--deep-black);
+  color: var(--off-white);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  cursor: crosshair;
+  /* Custom cursor */
+}
+
+h1,
+h2,
+h3,
+.brutal-font {
+  font-family: 'Archivo Black', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+}
+
+.mono-font {
+  font-family: 'Space Mono', monospace;
+}
+
+/* Custom Utilities */
+.brutal-border {
+  border: 2px solid var(--off-white);
+  box-shadow: 4px 4px 0px var(--off-white);
+  transition: all 0.2s ease;
+}
+
+.brutal-border:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px var(--neon-green);
+  border-color: var(--neon-green);
+  color: var(--neon-green);
+}
+
+.neon-text-shadow {
+  text-shadow: 0 0 10px rgba(204, 255, 0, 0.5);
+}
+
+.selection-invert::selection {
+  background: var(--neon-pink);
+  color: var(--deep-black);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--deep-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--off-white);
+  border: 2px solid var(--deep-black);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neon-green);
+}
