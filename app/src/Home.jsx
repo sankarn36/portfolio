@@ -105,7 +105,7 @@ function Home() {
   }, []);
 
   const techStack = [
-    "PYTHON", "HTML5", "CSS3", "JAVASCRIPT", "BOOTSTRAP 5", "REACT.JS", "PHP", "MYSQL", "TAILWIND", "GIT"
+    "PYTHON", "HTML5", "CSS3", "JAVASCRIPT", "BOOTSTRAP 5", "REACT.JS", "PHP", "MYSQL", "TAILWIND", "GIT","POSTGRESQL"
   ];
 
   const detailedProjects = [
